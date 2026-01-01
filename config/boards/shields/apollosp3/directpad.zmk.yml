@@ -1,0 +1,9 @@
+---
+file_format: "1"
+id: apollosp3
+name: ApolloSP3
+type: shield
+url: https://github.com/onikubimi/zmk-config-apollosp3
+requires: [nice_nano_v2]
+exposes: []
+features: [keys]
