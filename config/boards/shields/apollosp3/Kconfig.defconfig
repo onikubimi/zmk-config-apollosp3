@@ -1,0 +1,6 @@
+if SHIELD_DIRECTPAD
+
+config ZMK_KEYBOARD_NAME
+    default "apollosp3"
+
+endif
