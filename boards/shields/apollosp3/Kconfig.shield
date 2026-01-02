@@ -1,4 +1,4 @@
-// 左右を定義するために、shieldに定義を書きます。
+# 左右を定義するために、shieldに定義を書きます。
 
 config SHIELD_APOLLOSP3_LEFT
     def_bool $(shields_list_contains,apollosp3_left)
