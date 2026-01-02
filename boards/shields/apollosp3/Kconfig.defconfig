@@ -5,7 +5,7 @@ if SHIELD_APOLLOSP3_LEFT
 
 # 左手（Central）側のデバイス名
 config ZMK_KEYBOARD_NAME
-    default "ApolloSP3"
+    default "ap_l"
 
 # 左手側をBluetooth接続の親機（Central）として設定
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
@@ -18,7 +18,7 @@ if SHIELD_APOLLOSP3_RIGHT
 # 右手（Peripheral）側のデバイス名
 # 書き込み時に区別しやすいよう名前を変えることも可能ですが、通常は統一します
 config ZMK_KEYBOARD_NAME
-    default "ApolloSP3"
+    default "ap_r"
 
 endif
 
