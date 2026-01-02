@@ -1,0 +1,16 @@
+#include "apollosp3.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 24 GPIO_ACTIVE_HIGH> // Col0: 024/D5
+        , <&gpio0 11 GPIO_ACTIVE_HIGH> // Col1: 011/D7
+        , <&gpio1 11 GPIO_ACTIVE_HIGH> // Col2: 111/D14
+        , <&gpio0 2  GPIO_ACTIVE_HIGH> // Col3: 002/D19
+        , <&gpio1 15 GPIO_ACTIVE_HIGH> // Col4: 115/D18
+        ;
+};
+
+&default_transform {
+    // 左手の5列（Col0-4）の次からカウントするため「5」を指定
+    col-offset = <5>;
+};
