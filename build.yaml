@@ -1,5 +1,0 @@
-include:
-  - board: nice_nano_v2
-    shield: apollosp3_left
-  - board: nice_nano_v2
-    shield: apollosp3_right
