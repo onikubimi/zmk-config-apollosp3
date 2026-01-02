@@ -1,0 +1,11 @@
+#include "apollosp3.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 24 GPIO_ACTIVE_HIGH> // Col_0: 024/D5
+        , <&gpio0 11 GPIO_ACTIVE_HIGH> // Col_1: 011/D7
+        , <&gpio1 11 GPIO_ACTIVE_HIGH> // Col_2: 111/D14
+        , <&gpio0 2  GPIO_ACTIVE_HIGH> // Col_3: 002/D19
+        , <&gpio1 15 GPIO_ACTIVE_HIGH> // Col_4: 115/D18
+        ;
+};
