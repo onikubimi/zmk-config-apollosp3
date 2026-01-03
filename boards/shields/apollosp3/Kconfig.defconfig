@@ -8,7 +8,7 @@ config ZMK_KEYBOARD_NAME
     default "apollosp3_left"
 
 # 左手側をBluetooth接続の親機（Central）として設定
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
 endif
