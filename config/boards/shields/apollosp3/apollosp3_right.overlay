@@ -1,1 +1,5 @@
+#include "apollosp3.dtsi"
 
+&default_transform {
+    col-offset = <5>;
+};
