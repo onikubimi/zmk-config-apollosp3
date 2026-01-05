@@ -1,1 +1,4 @@
-
+if SHIELD_APOLLOSP3_LEFT || SHIELD_APOLLOSP3_RIGHT
+config ZMK_SPLIT
+    default y
+endif
