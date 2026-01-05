@@ -1,1 +1,13 @@
-
+file_format: "1"
+id: apollosp3
+name: apollosp3
+type: shield
+siblings:
+  - apollosp3_left
+  - apollosp3_right
+boards:
+  - nice_nano
+layouts:
+  - id: default
+    display_name: Default Layout
+    src: studio_data/layouts/default.yaml
