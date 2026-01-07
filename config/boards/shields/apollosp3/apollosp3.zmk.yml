@@ -10,7 +10,9 @@ siblings:
   - apollosp3_left
   - apollosp3_right
 boards:
+  - nice_nano_v2
   - nice_nano
+  - pro_micro
 layouts:
   - id: default
     display_name: Default Layout
