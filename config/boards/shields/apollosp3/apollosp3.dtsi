@@ -21,7 +21,7 @@
 
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display_name = "ApolloSP3";
+        display-name = "ApolloSP3";
         transform = <&default_transform>; 
     };
 
