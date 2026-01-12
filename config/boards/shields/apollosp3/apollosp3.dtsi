@@ -11,6 +11,7 @@
 / {
     physical_layout0: physical_layout0 {
         compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
         transform = <&default_transform>;
         keys
             /* 1段目: y=0 */
