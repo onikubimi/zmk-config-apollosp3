@@ -22,7 +22,8 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "ApolloSP3";
-        transform = <&default_transform>; 
+        transform = <&default_transform>;
+        keys = <&kscan0>;
     };
 
     kscan0: kscan {
