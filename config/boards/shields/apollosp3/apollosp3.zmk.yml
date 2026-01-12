@@ -6,6 +6,7 @@ requires:
   - pro_micro
 features:
   - keys
+  - studio
 siblings:
   - apollosp3_left
   - apollosp3_right
