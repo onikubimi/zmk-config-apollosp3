@@ -2,9 +2,9 @@
 
 &kscan0 {
         col-gpios
-            = <&gpio0 24 GPIO_ACTIVE_LOW>
-            , <&gpio0 11 GPIO_ACTIVE_LOW>
-            , <&gpio1 11 GPIO_ACTIVE_LOW>
-            , <&gpio0 2  GPIO_ACTIVE_LOW>
-            , <&gpio1 15 GPIO_ACTIVE_LOW>;
+            = <&gpio1 15 GPIO_ACTIVE_LOW> // 元の5番目
+            , <&gpio0 2  GPIO_ACTIVE_LOW> // 元の4番目
+            , <&gpio1 11 GPIO_ACTIVE_LOW> // 元の3番目
+            , <&gpio0 11 GPIO_ACTIVE_LOW> // 元の2番目
+            , <&gpio0 24 GPIO_ACTIVE_LOW>; // 元の1番目
 };
