@@ -8,18 +8,3 @@
         , <&gpio0 11 GPIO_ACTIVE_LOW>
         , <&gpio0 24 GPIO_ACTIVE_LOW>;
 };
-
-
-&flash0 {
-    partitions {
-        compatible = "fixed-partitions";
-        #address-cells = <1>;
-        #size-cells = <1>;
-
-        /* nice_nano (nRF52840) のメモリ末尾に storage 領域を確保 */
-        storage_partition: partition@ec000 {
-            label = "storage";
-            reg = <0x000ec000 0x00008000>;
-        };
-    };
-};
