@@ -13,7 +13,3 @@ boards:
   - nice_nano_v2
   - nice_nano
   - pro_micro
-layouts:
-  - id: default
-    display_name: Default Layout
-    src: studio_data/layouts/default.yaml
