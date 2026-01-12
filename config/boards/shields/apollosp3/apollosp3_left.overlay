@@ -1,10 +1,25 @@
 #include "apollosp3.dtsi"
 
 &kscan0 {
-        col-gpios
-            = <&gpio1 15 GPIO_ACTIVE_LOW> // 元の5番目
-            , <&gpio0 2  GPIO_ACTIVE_LOW> // 元の4番目
-            , <&gpio1 11 GPIO_ACTIVE_LOW> // 元の3番目
-            , <&gpio0 11 GPIO_ACTIVE_LOW> // 元の2番目
-            , <&gpio0 24 GPIO_ACTIVE_LOW>; // 元の1番目
+    col-gpios
+        = <&gpio1 15 GPIO_ACTIVE_LOW>
+        , <&gpio0 2  GPIO_ACTIVE_LOW>
+        , <&gpio1 11 GPIO_ACTIVE_LOW>
+        , <&gpio0 11 GPIO_ACTIVE_LOW>
+        , <&gpio0 24 GPIO_ACTIVE_LOW>;
+};
+
+
+&flash0 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        /* nice_nano (nRF52840) のメモリ末尾に storage 領域を確保 */
+        storage_partition: partition@ec000 {
+            label = "storage";
+            reg = <0x000ec000 0x00008000>;
+        };
+    };
 };
