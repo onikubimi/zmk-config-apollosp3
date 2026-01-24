@@ -1,9 +1,8 @@
-if SHIELD_APOLLOSP3_LEFT
+if SHIELD_APOLLOSP3_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "ApolloSP3"
 
-# 「BLE_」を抜いたこの形が正解です
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
