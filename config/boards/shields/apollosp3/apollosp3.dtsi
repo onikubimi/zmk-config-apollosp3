@@ -5,14 +5,6 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
-        zmk,battery = &vbatt;
-    };
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
-        io-channels = <&adc 7>;
-        output-ohms = <2000000>;
-        full-ohms = <(2000000 + 806000)>;
     };
 };
 
