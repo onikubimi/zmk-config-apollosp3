@@ -1,5 +1,4 @@
-if SHIELD_APOLLOSP3_RIGHT
-
+if SHIELD_APOLLOSP3_LEFT
 config ZMK_KEYBOARD_NAME
     default "ApolloSP3"
 
