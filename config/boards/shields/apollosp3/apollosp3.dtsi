@@ -10,13 +10,10 @@
 
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
+        /* labelプロパティを削除（最新仕様） */
         io-channels = <&adc 7>;
         output-ohms = <2000000>;
         full-ohms = <2806000>;
-        /* 電圧範囲を明示 */
-        vbat-max-microvolt = <4200000>;
-        vbat-min-microvolt = <3300000>;
     };
 
     physical_layout0: physical_layout0 {
