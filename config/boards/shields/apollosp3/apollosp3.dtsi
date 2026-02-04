@@ -14,6 +14,9 @@
         io-channels = <&adc 7>;
         output-ohms = <2000000>;
         full-ohms = <2806000>;
+        /* 電圧範囲を明示 */
+        vbat-max-microvolt = <4200000>;
+        vbat-min-microvolt = <3300000>;
     };
 
     physical_layout0: physical_layout0 {
@@ -89,4 +92,9 @@
             , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio1 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+};
+
+/* ADCを有効化 */
+&adc {
+    status = "okay";
 };
