@@ -16,7 +16,43 @@
         };
     };
 };
+/ {
+    combos {
+        compatible = "zmk,combos";
+        
+        // Q(0) + A(10) で Bluetooth プロファイル 0 (1番目) へ
+        combo_bt_sel_0 {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+            bindings = <&bt BT_SEL 0>;
+            layers = <1>;
+        };
 
+        // W(1) + S(11) で Bluetooth プロファイル 1 (2番目) へ
+        combo_bt_sel_1 {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+            bindings = <&bt BT_SEL 1>;
+            layers = <1>;
+        };
+
+        // E(2) + D(12) で Bluetooth プロファイル 2 (3番目) へ
+        combo_bt_sel_2 {
+            timeout-ms = <50>;
+            key-positions = <2 12>;
+            bindings = <&bt BT_SEL 2>;
+            layers = <1>;
+        };
+
+        // T(4) + G(14) + V(24) で 現在のペアリング情報をクリア
+        combo_bt_clr {
+            timeout-ms = <50>;
+            key-positions = <4 14 24>;
+            bindings = <&bt BT_CLR>;
+            layers = <1>;
+        };
+    };
+};
 / {
     keymap {
         compatible = "zmk,keymap";
