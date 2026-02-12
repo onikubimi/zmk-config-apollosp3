@@ -71,9 +71,9 @@
         function_layer {
             bindings = <
                 &kp N1          &kp N2      &kp N3    &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-                &none           &none       &ENTER    &kp UP     &kp BSPC       &none      &none      &kp SEMI   &kp SQT    &kp MINUS
-                &kp TAB         &none       &LEFT     &kp DOWN   &kp RIGHT      &none      &none      &none      &kp INT1   &kp SLASH
-                &studio_unlock  &none       &none     &none      &trans         &none      &none      &kp DEL    &kp ENTER  &kp BSPC
+                &none           &none       &ENTER    &kp UP     &kp BSPC       &none      &none      &kp SEMI   &kp SQT    &kp BSPC
+                &kp TAB         &none       &LEFT     &kp DOWN   &kp RIGHT      &none      &none      &kp PLUS   &kp MINUS  &kp DEL
+                &studio_unlock  &none       &none     &none      &trans         &none      &none      &kp SLASH  &kp INT1   &kp ENTER
             >;
         };
     };
