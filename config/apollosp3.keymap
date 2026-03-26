@@ -60,20 +60,20 @@
         // レイヤー0: 基本レイヤー
         default_layer {
             bindings = <
-                &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y       &kp U      &kp I      &kp O      &kp P
-                &kp A      &kp S      &kp D      &kp F      &kp G          &kp H       &kp J      &kp K      &kp L      &kp BSPC
-                &kp LSHFT  &kp Z      &kp X      &kp C      &kp V          &kp B       &kp N      &kp M      &kp EQUAL  &kp DEL
-                &kp ESC    &kp CAPS   &kp LALT   &kp LCTRL  &lt 1 SPACE    &lt 1 INT5  &kp RGUI   &kp COMMA  &kp DOT    &kp ENTER
+                &kp Q     , &kp W     , &kp E     , &kp R     , &kp T         , &kp Y      , &kp U     , &kp I     , &kp O     , &kp P
+                &kp A     , &kp S     , &kp D     , &kp F     , &kp G         , &kp H      , &kp J     , &kp K     , &kp L     , &kp BSPC
+                &kp LSHFT , &kp Z     , &kp X     , &kp C     , &kp V         , &kp B      , &kp N     , &kp M     , &kp EQUAL , &kp DEL
+                &kp ESC   , &kp CAPS  , &kp LALT  , &kp LCTRL , &lt 1 SPACE   , &lt 1 INT5 , &kp RGUI  , &kp COMMA , &kp DOT   , &kp ENTER
             >;
         };
 
         // レイヤー1: ロック解除用（SPACE長押しで移動）
         function_layer {
             bindings = <
-                &kp N1          &kp N2      &kp N3    &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-                &none           &none       &ENTER    &kp UP     &kp BSPC       &none      &none      &kp SEMI   &kp SQT    &kp BSPC
-                &kp TAB         &none       &LEFT     &kp DOWN   &kp RIGHT      &none      &none      &kp PLUS   &kp MINUS  &kp DEL
-                &studio_unlock  &none       &none     &none      &trans         &none      &none      &kp SLASH  &kp INT1   &kp ENTER
+                &kp N1         , &kp N2     , &kp N3   , &kp N4    , &kp N5        , &kp N6    , &kp N7    , &kp N8    , &kp N9    , &kp N0
+                &none          , &none      , &ENTER   , &kp UP    , &kp BSPC      , &none     , &none     , &kp SEMI  , &kp SQT   , &kp BSPC
+                &kp TAB        , &none      , &LEFT    , &kp DOWN  , &kp RIGHT     , &none     , &none     , &kp PLUS  , &kp MINUS , &kp DEL
+                &studio_unlock , &none      , &none    , &none     , &trans        , &none     , &none     , &kp SLASH , &kp INT1  , &kp ENTER
             >;
         };
     };
